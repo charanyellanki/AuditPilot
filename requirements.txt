@@ -1,0 +1,30 @@
+# --- Core orchestration ---
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# --- LLM providers (API-based; no local model in the demo path) ---
+anthropic>=0.40.0
+openai>=1.50.0
+
+# --- Vector store / knowledge base ---
+chromadb>=0.5.0
+# Embeddings: use a hosted embedding API or a CPU sentence-transformer.
+# Pinned light by default; swap as needed.
+sentence-transformers>=3.0.0
+
+# --- API + demo UI ---
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+gradio>=4.44.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+
+# --- Eval tracking ---
+mlflow>=2.16.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0
+tenacity>=9.0.0
+
+# --- Dev / test (optional; see TODO to split into requirements-dev.txt) ---
+pytest>=8.0.0
